@@ -42,4 +42,9 @@ public class StudentController {
     {
         return studentService.modStud(student);
     }
+    @DeleteMapping("student/{id}")
+    public String deleteStudentById(@PathVariable int id)
+    {
+        return studentService.deletestdid(id);
+    }
 }
